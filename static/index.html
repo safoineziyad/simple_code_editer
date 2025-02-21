@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Code Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Online Code Editor</h1>
+  <div class="editor-container">
+    <select id="language">
+      <option value="python">Python</option>
+      <option value="javascript">JavaScript</option>
+      <option value="go">Go</option>
+    </select>
+    <div id="editor" style="height: 400px; width: 100%;"></div>
+    <button id="run-btn">Run Code</button>
+  </div>
+  <h2>Output</h2>
+  <pre id="output"></pre>
+
+  <!-- Monaco Editor -->
+  <script src="https://unpkg.com/monaco-editor@0.33.0/min/vs/loader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
